@@ -1,0 +1,254 @@
+/* for public elements */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* section home Start */
+.home {
+  background: url(../images/events-heavenly-header.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .home_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home .home_text {
+  color: #fff;
+  text-align: center;
+}
+
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  height: 100%;
+  padding-top: 60px;
+  -webkit-transition: all 0.5s;
+  -o-transition:all 0.5s;
+  transition:all 0.5s;
+  overflow: hidden;
+}
+
+.home span {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidenav a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: rgba(177, 31, 35, 0.479);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* section home end */
+
+/* section accordion start */
+.accordion {
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.accordion .accordion-header {
+  color: white;
+  background-color: rgba(214, 46, 51, 0.6);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion .accordion-body {
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+
+/* section accordion end */
+
+/* section counter start */
+.counter {
+  background: url(../images/invitation-2508607__340.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.counter_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.counter .tim {
+  padding: 50px;
+  border: 1px solid #FFF;
+}
+
+/* section counter end */
+
+/* section contact us start */
+
+.contact_us {
+  margin: 100px 0 100px;
+}
+
+.contact_us .contact_header h2 {
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.contact_us .contact_header p {
+  color: #777;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact_us .contact_info h3 {
+  text-transform: uppercase;
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact_us .contact_info p {
+  line-height: 26px;
+  color: #777;
+}
+
+.contact_us .contact_icons {
+  margin-top: 50px;
+}
+
+.contact_us .contact_icons p {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.contact_us .contact_icons p:nth-child(2) {
+  color: #f00;
+}
+
+.contact_us .contact_icons i {
+  margin-right: 20px;
+  color: #777;
+}
+
+.contact_us .contact_social {
+  margin: 60px 0 60px;
+  color: #777;
+}
+
+.contact_us .contact_social i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact_us .contact_social i:hover {
+  color: #fff;
+  background-color: #D62E33;
+  /* border: 1px solid #D62E33; */
+  border-radius: 50%;
+}
+
+.contact_us .contact_form form input,
+.contact_us .contact_form form textarea {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.contact_us .contact_form form textarea {
+  height: 200px;
+  /* resize: vertical; */
+}
+
+.contact_us .contact_form form button {
+  background-color: #D62E33;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.contact_us .contact_form form #char {
+  font-size: 20px;
+  color: #D62E33;
+}
+
+/* section contact us end */
